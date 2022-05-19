@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>vue-02</title>
+    <script src="js/vue.js"></script>
+</head>
+<body>
+   <div id="app">
+       名字: {{name}} </br>
+       详情:{{product.id}} --- {{product.proName}} --- {{product.price * 0.9}} ---{{product.proDate}} </br>
+       爱好: {{hobbies[1]}} --- {{hobbies[3]}}
+   </div>
+
+</body>
+
+<script>
+    new Vue({
+        el:'#app',
+        data : {
+            name:"赵四",
+            product:{
+                id : 666,
+                proName : "东北F4",
+                price : 108000,
+                proDate : '1988-04-21'
+            },
+            hobbies : ['斗舞','dj','唱歌','炸雷']
+        }
+    })
+</script>
+</html>
